@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+
 ## add matrix into the cash
 makeCacheMatrix <- function(x = matrix()) {
     if (dim(x)[1] != dim(x)[2]) {
@@ -16,12 +15,9 @@ makeCacheMatrix <- function(x = matrix()) {
     list(setm = setm, getm = getm, 
          setsolve = setsolve,
          getsolve = getsolve)
-    
 }
 
-
-## solve inverse of square matrix
-
+# solve inverse of square matrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
     m <- x$getsolve()
